@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+    background-color: rgb(185, 185, 185);
+}
+
+.top {
+    width: 800px;
+    height: 60px;
+    background-color: grey;
+    margin: 10px auto;
+    border: 3px solid black;
+    border-radius: 5px;
+}
+
+.lines {
+    width: 35px;
+    height: 35px;
+    position: relative;
+    top: -51px;
+    right: -746px;
+    border: 3px solid white;
+    background-color: black;
+    cursor: pointer;
+ }
+
+.line {
+    width: 17px;
+    border: 1px solid white;
+    position: relative;
+    top: 16px;
+    right: -8px;
+}
+
+.line::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 15px;
+    border: 1px solid white;
+    top: -8px;
+}
+
+.line::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 15px;
+    border: 1px solid white;
+    top: 6px;
+}
+
+.links {
+    text-align: center;
+    margin: 21px auto;
+}
+
+.header-link {
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    padding: 5px;
+    text-decoration: none;
+    margin: 50px 20px;
+}
+
+.content {
+    width: 800px;
+    height: 900px;
+    margin: 0 auto;
+    border: 3px solid black;
+    border-radius: 5px;
+    background-color: grey;
+}
+
+.modal {
+    margin: 20px auto;
+    width: 400px;
+    height: 200px;
+    background-color: rgb(48, 48, 48);
+}
+
+.close {
+    width: 20px;
+    height: 20px;
+    border: 3px solid white;
+    position: relative;
+    right: -369px;
+    top: 5px;
+    cursor: pointer;
+}
+
+.close::before {
+    content: "";
+    position: absolute;
+    width: 19px;
+    border: 1px solid red;
+    rotate: 45deg;
+    top: 47%;
+}
+
+.close::after {
+    content: "";
+    position: absolute;
+    width: 19px;
+    border: 1px solid red;
+    rotate: -45deg;
+    top: 47%;
+}
+
+.text {
+    color: white;
+    padding: 10px;
+    text-align: justify;
+}
